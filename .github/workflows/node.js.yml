@@ -21,6 +21,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+<<<<<<< HEAD
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
@@ -29,3 +30,9 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: npm test
+=======
+    - name: Install Dependencies
+      run: npm install
+    - name: Build Project
+      run: npm run build --if-present
+>>>>>>> Merge remote changes
